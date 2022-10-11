@@ -4,20 +4,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
-    /* margin: 0;
-    padding: 0; */
+    margin: 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
+}
+
+.section-1 {
+    display: flex;
+    justify-content: center;
 }
 
 .content {
     width: fit-content;
     background-color: black;
     display: flex;
+    justify-content: space-between;
     margin: 50px 140px;
     padding: 0 100px;
     border-radius: 20px;
-    /* height: 646;
-    width: 1321; */
 }
 
 .banner_part {
@@ -40,6 +44,7 @@ p {
 .image {
     padding: 0;
     margin: 0;
+    /* width: 100%; */
 
 }
 
@@ -56,18 +61,118 @@ p {
     color: #FFFFFF;
 }
 
-.side-menu{
+.side-menu {
     display: flex;
     flex-direction: column;
+    gap: 30px;
     background-color: #161616;
-    width: fit-content;
-    
+    height: 312px;
+    width: 312px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
 }
 
 .menu {
     text-decoration: none;
     background-color: #FFFFFF;
-    margin: 15px 30px;
-    width: 252px;   
+    width: 252px;
     height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #161616;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.current-menu {
+    background-color: #DD0000;
+    color: #FFFFFF;
+}
+
+.section-1 {
+    display: flex;
+    gap: 24px;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.blog {
+    border: 1px solid #1E1E1E;
+    border-radius: 10px;
+}
+
+.news {
+    margin: 15px 20px;
+}
+
+.news a {
+    text-decoration: none;
+    color: #161616;
+    font-size: 16px;
+    width: 500;
+    padding: 4px 16px;
+    border: 1px solid #161616;
+    border-radius: 5px;
+
+}
+
+.comments {
+    display: flex;
+    gap: 30px;
+}
+
+.comments span {
+    margin-left: 10px;
+}
+
+/* footer */
+
+footer {
+    background-color: #161616;
+    height: 444px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+
+}
+
+hr {
+    width: 1320px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 50px 0px;
+}
+
+.footer-title h1 {
+    font-size: 40px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-link a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #B9B9B9;
+    padding: 0;
+    margin: 0;
+
+}
+
+.footer-link {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
